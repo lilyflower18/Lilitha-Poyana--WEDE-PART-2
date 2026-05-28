@@ -1,0 +1,203 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff0f5;
+    color: #333;
+    line-height: 1.6;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(to right, #ff4f87, #ff85a2);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: #d63384;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #ff85a2;
+    color: white;
+}
+
+/* MAIN CONTENT */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* HERO SECTION */
+.hero-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffe4ec;
+    color: #b30059;
+}
+
+.hero-section h3 {
+    font-size: 1.8rem;
+}
+
+/* SERVICES SECTION */
+.services-page {
+    padding: 40px 20px;
+}
+
+/* GRID LAYOUT */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* SERVICE CARDS */
+.service-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0px 4px 12px rgba(214, 51, 132, 0.2);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0px 8px 18px rgba(214, 51, 132, 0.35);
+}
+
+/* CARD IMAGES */
+.service-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+/* CARD CONTENT */
+.service-card-content {
+    padding: 20px;
+}
+
+/* CARD HEADINGS */
+.service-card-content h3 {
+    color: #d63384;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+/* CARD TEXT */
+.service-card-content p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* FORMS */
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+
+    box-shadow: 0px 4px 10px rgba(214, 51, 132, 0.15);
+}
+
+form label {
+    font-weight: bold;
+    color: #b30059;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+    border: 1px solid #ffb6c1;
+    border-radius: 5px;
+}
+
+/* BUTTONS */
+button,
+input[type="submit"] {
+    background-color: #d63384;
+    color: white;
+
+    border: none;
+    padding: 12px 20px;
+
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #ff4f87;
+}
+
+/* FOOTER */
+footer {
+    background-color: #d63384;
+    color: white;
+
+    text-align: center;
+    padding: 18px;
+
+    margin-top: auto;
+}
+
+/* IFRAME MAP */
+iframe {
+    border-radius: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-section h3 {
+        font-size: 1.4rem;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+}
